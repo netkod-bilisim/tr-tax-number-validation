@@ -23,7 +23,7 @@ class TrTaxNumberValidation
         $sum = 0;
         for ($i = 0; $i < 9; $i++) {
             $mod = ($array[$i] + (9 - $i)) % 10;
-            $pow = $mod * pow(2, (9 - $i)) % 9;
+            $pow = $mod * pow(2, 9 - $i) % 9;
             $sum += ($mod !== 0 && $pow === 0) ? 9 : $pow;
         }
         $checksum = ($sum % 10 === 0) ? 0 : (10 - ($sum % 10));
