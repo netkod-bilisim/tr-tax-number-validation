@@ -1,0 +1,30 @@
+{
+  "name": "netkod-bilisim/tr-tax-number-validation",
+  "description": "It checks that the TR Tax Number is in the correct format.",
+  "keywords": [
+    "tr",
+    "validation",
+    "tax number",
+    "tax number validation",
+    "tr tax number",
+    "tr tax number validation"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Remzi DALYAN",
+      "email": "remzi.dalyan@netkodbilisim.com",
+      "role": "Software Engineer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "files": [
+      "./src/TrTaxNumberValidation.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
